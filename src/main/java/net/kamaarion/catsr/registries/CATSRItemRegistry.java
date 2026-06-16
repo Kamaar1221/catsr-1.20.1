@@ -2,8 +2,10 @@ package net.kamaarion.catsr.registries;
 
 import io.redspace.ironsspellbooks.util.ItemPropertiesHelper;
 import net.kamaarion.catsr.CATSR;
-import net.kamaarion.catsr.items.armor.remnantpaladinarmorset.RemnantPaladinArmorItem;
-import net.kamaarion.catsr.items.curios.sundrowned_tome.SundrownedTome;
+import net.kamaarion.catsr.items.armor.RemnantPaladinArmorItem;
+import net.kamaarion.catsr.items.curios.MonstrousManualSpellbook;
+import net.kamaarion.catsr.items.curios.SundrownedTomeSpellbook;
+import net.kamaarion.catsr.items.staff.MagmaAtlatlStaff;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
@@ -25,7 +27,12 @@ public class CATSRItemRegistry {
     public static final RegistryObject<Item> REMNANT_PALADIN_BOOTS = ITEMS.register("remnant_paladin_boots", () -> new RemnantPaladinArmorItem(ArmorItem.Type.BOOTS, ItemPropertiesHelper.equipment().rarity(Rarity.EPIC).fireResistant()));
 
     // Spellbooks
-    public static final RegistryObject<Item> SUNDROWNED_TOME = ITEMS.register("sundrowned_tome", () -> new SundrownedTome(new Item.Properties().rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> SUNDROWNED_TOME = ITEMS.register("sundrowned_tome", () -> new SundrownedTomeSpellbook(new Item.Properties().rarity(Rarity.EPIC)));
+    public static final RegistryObject<Item> MONSTROUS_MANUAL = ITEMS.register("monstrous_manual", () -> new MonstrousManualSpellbook(new Item.Properties().rarity(Rarity.EPIC)));
+
+    //Staffs
+    public static final RegistryObject<Item> MAGMA_ATLATL = ITEMS.register
+            ("magma_atlatl", MagmaAtlatlStaff::new);
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

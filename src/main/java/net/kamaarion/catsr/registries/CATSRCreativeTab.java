@@ -23,6 +23,8 @@ public class CATSRCreativeTab {
                         output.accept(CATSRItemRegistry.REMNANT_PALADIN_LEGGINGS.get());
                         output.accept(CATSRItemRegistry.REMNANT_PALADIN_BOOTS.get());
                         output.accept(CATSRItemRegistry.SUNDROWNED_TOME.get());
+                        output.accept(CATSRItemRegistry.MONSTROUS_MANUAL.get());
+                        output.accept(CATSRItemRegistry.MAGMA_ATLATL.get());
                     })
                     .build());
 

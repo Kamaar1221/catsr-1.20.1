@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "catsr:sundrowned_tome"
+    "catsr:sundrowned_tome",
+    "catsr:monstrous_manual"
   ]
 }

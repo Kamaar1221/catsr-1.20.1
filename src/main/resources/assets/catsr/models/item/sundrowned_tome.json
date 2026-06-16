@@ -6,13 +6,7 @@
   },
   "perspectives": {
     "gui": {
-      "parent": "item/generated",
-      "textures": {
-        "layer0": "catsr:item/sundrowned_tome_gui"
-      }
-    },
-    "head": {
-      "parent": "catsr:item/sundrowned_tome_model"
+      "parent": "catsr:item/sundrowned_tome_gui"
     }
   }
 }
